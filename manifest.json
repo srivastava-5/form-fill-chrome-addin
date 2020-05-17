@@ -4,7 +4,7 @@
   "version": "1.0",
   "browser_action": {
     "default_popup": "index.html",
-    "default_icon": "./assets/extension_logo.png"
+    "default_icon": "extension_logo.png"
   },
   "manifest_version": 2,
   "commands": {
@@ -19,7 +19,7 @@
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
-      "js": ["./scripts/formfill.js"]
+      "js": ["/scripts/formfill.js"]
     }
   ],
   "permissions": ["tabs", "activeTab"]
